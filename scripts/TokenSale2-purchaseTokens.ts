@@ -33,8 +33,8 @@ const main = async () => {
   // const tx = await factory.purchaseTokens(1, { value: 100000000000, gasLimit: estimated });
   
   // Test 2 - estimateGas with gasLimit - FAILS
-  // let estimated = await factory.estimateGas.purchaseTokens(100, {value: 100, gasLimit: 1000000});
-  // const tx = await factory.purchaseTokens(1, { value: 100000000000, gasLimit: estimated });
+  let estimated = await factory.estimateGas.purchaseTokens(1, {value: 100000000000, gasLimit: 1000000});
+  const tx = await factory.purchaseTokens(1, { value: 100000000000, gasLimit: estimated });
 
   // Test 3 - provide gasLimit - SUCCEEDS!
   // const tx = await factory.purchaseTokens(1, { value: 100000000000, gasLimit: 1000000 });
