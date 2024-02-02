@@ -20,12 +20,10 @@
 
 ```
 yarn deploy:testnet
-yarn deploy:mainnet
 ```
 
 ## Operating Contracts
 
 ```
 yarn TokenSale2-purchaseTokens:testnet
-yarn TokenSale2-purchaseTokens:mainnet
 ```
